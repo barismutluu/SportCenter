@@ -37,3 +37,5 @@ Bu proje, bir spor merkezi için çeşitli dersleri, en iyi eğitmenleri, bir BM
 
 - İletişim bölümünde interaktif bir Google Haritası bulunur.
 - Harita tamamen işlevseldir ve yer tutucu resmin yerini alır.
+
+https://sport-center-ten.vercel.app/
