@@ -1,0 +1,91 @@
+.statistics-container {
+  background-color: #f1f8ff;
+  /* Arka plan rengini açık mavi yapar */
+
+  width: 90%;
+  /* Konteynerin genişliğini ebeveyn elemanın %90'ı olarak ayarlar */
+
+  max-width: 1200px;
+  /* Konteynerin maksimum genişliğini 1200 piksel ile sınırlar */
+
+  margin: 0 auto;
+  /* Konteyneri yatayda ortalar (üst-alt boşluk 0, sağ-sol otomatik) */
+
+  padding: 20px;
+  /* İçerik çevresine 20 piksel iç boşluk ekler */
+}
+
+#statistics .statistic-container {
+  display: flex;
+  /* Konteyner içeriğini esnek kutu modeliyle düzenler */
+
+  justify-content: space-between;
+  /* İçeriği yatayda eşit boşluklarla hizalar */
+
+  align-items: center;
+  /* İçeriği dikeyde ortalar */
+
+  padding: 40px 0;
+  /* Üst ve alt boşlukları 40 piksel yapar */
+
+  background-color: #f1f8ff;
+  /* Arka plan rengini açık mavi yapar */
+
+  text-align: center;
+  /* İçeriği ortalar */
+
+  flex-wrap: wrap;
+  /* İçerik taşarsa yeni satıra geçmesini sağlar */
+}
+
+.stat {
+  flex: 1 1 200px;
+  /* Esnek birim: 1 büyüme oranı, 1 küçülme oranı, başlangıç genişliği 200 piksel */
+
+  margin: 10px;
+  /* Etrafına 10 piksel dış boşluk ekler */
+
+  background-color: #ffffff;
+  /* Arka plan rengini beyaz yapar */
+
+  padding: 20px;
+  /* İçerik çevresine 20 piksel iç boşluk ekler */
+
+  border-radius: 10px;
+  /* Kenarları yuvarlaklaştırır (10 piksel yarıçapında) */
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Hafif gölge efekti ekler (x ve y ekseninde 0 piksel, bulanıklık 10 piksel, siyahın %10'u) */
+}
+
+.stat h2 {
+  font-size: 2.5rem;
+  /* Başlık boyutunu 2.5 rem yapar (1 rem genellikle 16 piksele eşittir) */
+
+  margin-bottom: 10px;
+  /* Altına 10 piksel boşluk ekler */
+
+  color: #007bff;
+  /* Rakamların rengini mavi yapar (Bootstrap birincil rengi) */
+}
+
+.stat p {
+  font-size: 1.25rem;
+  /* Paragraf boyutunu 1.25 rem yapar */
+
+  color: #333;
+  /* Metin rengini koyu gri yapar (#333, siyahın %20 kadar açık tonudur) */
+
+  font-weight: bold;
+  /* Metni kalın yapar */
+}
+
+.stat:first-child {
+  margin-left: 200px;
+  /* İlk elemanın sol tarafına 200 piksel dış boşluk ekler */
+}
+
+.stat:last-child {
+  margin-right: 200px;
+  /* Son elemanın sağ tarafına 200 piksel dış boşluk ekler */
+}

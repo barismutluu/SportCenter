@@ -1,0 +1,101 @@
+#footer {
+  /* Footer (alt bilgi) bölümünün arka plan rengini koyu mavi (#355592) yapar */
+  background-color: #355592;
+}
+
+.footer-content {
+  /* Footer içeriğinin genişliğini %60 olarak ayarlar */
+  width: 60%;
+
+  /* Footer içeriğini yatayda ortalar */
+  margin: auto;
+}
+
+.footer-content img {
+  /* Footer'daki resimlerin genişliğini %20 yapar */
+  width: 20%;
+}
+
+.footer-content p {
+  /* Paragraf metninin rengini beyaz yapar */
+  color: white;
+
+  /* Paragraf boyutunu 12px yapar */
+  font-size: 12px;
+
+  /* Paragrafın altına 15px boşluk ekler */
+  margin-bottom: 15px;
+
+  /* Paragraf metnini ortalar */
+  text-align: center;
+}
+
+.info-help {
+  /* Bilgi ve yardım bölümlerini esnek kutu modeliyle hizalar */
+  display: flex;
+
+  /* İçeriği yatayda boşluk bırakacak şekilde hizalar */
+  justify-content: space-around;
+
+  /* Öğeler arasında %5 boşluk bırakır */
+  gap: 5%;
+}
+
+.information h3 {
+  /* Bilgi başlığını kalın (font-weight: 500) yapar */
+  font-weight: 500;
+
+  /* Başlık rengini aliceblue (çok açık mavi) yapar */
+  color: aliceblue;
+}
+
+.information p {
+  /* Bilgi paragraflarını blok eleman olarak hizalar */
+  display: block;
+
+  /* Metnin altındaki çizgiyi kaldırır */
+  text-decoration: none;
+
+  /* Paragraf rengini aliceblue yapar */
+  color: aliceblue;
+
+  /* Paragraf boyutunu 12px yapar */
+  font-size: 12px;
+
+  /* Paragrafın üstüne 10px boşluk ekler */
+  margin-top: 10px;
+}
+
+.helpfulLinks h3 {
+  /* Faydalı bağlantılar başlığını kalın (font-weight: 500) yapar */
+  font-weight: 500;
+
+  /* Başlık rengini aliceblue yapar */
+  color: aliceblue;
+}
+
+.helpfulLinks p {
+  /* Faydalı bağlantılar paragraflarını blok eleman olarak hizalar */
+  display: block;
+
+  /* Metnin altındaki çizgiyi kaldırır */
+  text-decoration: none;
+
+  /* Paragraf rengini aliceblue yapar */
+  color: aliceblue;
+
+  /* Paragraf boyutunu 12px yapar */
+  font-size: 12px;
+
+  /* Paragrafın üstüne 10px boşluk ekler */
+  margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+  /* Ekran genişliği 576px veya daha küçük olduğunda uygulanacak stil kuralları */
+
+  .footer-content {
+    /* Footer içeriğinin genişliğini %100 yapar */
+    width: 100%;
+  }
+}

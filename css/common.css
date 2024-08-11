@@ -1,0 +1,21 @@
+/* Tüm elemanlara uygulanacak genel stiller */
+* {
+  /* Elemanların boyutlandırılmasını padding ve border alanlarını da kapsayacak şekilde ayarlar. Bu, elemanların istenmeyen şekilde genişlemesini önler. */
+  box-sizing: border-box;
+
+  /* Tüm elemanlar için varsayılan margin (kenar boşluğu) değerini sıfırlar. Bu, tarayıcı varsayılanlarından kaynaklanan istenmeyen boşlukları önler. */
+  margin: 0;
+
+  /* Tüm elemanlar için varsayılan padding (iç boşluk) değerini sıfırlar. Bu, tarayıcı varsayılanlarından kaynaklanan istenmeyen boşlukları önler. */
+  padding: 0;
+
+  /* Tüm elemanlar için varsayılan yazı tipini "Poppins" olarak ayarlar. Eğer "Poppins" mevcut değilse, sans-serif yazı tipi kullanılır. */
+  font-family: "Poppins", sans-serif;
+}
+.p {
+  /* Paragraf metnini ortalar */
+  text-align: center;
+
+  /* Alt boşluk 35px olarak ayarlanır */
+  margin-bottom: 35px;
+}

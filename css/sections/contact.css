@@ -1,0 +1,179 @@
+#contactUs {
+  /* İletişim bölümünün genişliğini ebeveyn elemanın %60'ı olarak ayarlar */
+  width: 60%;
+
+  /* Konteyneri yatayda ortalar */
+  margin: auto;
+}
+
+.contactUs-content h2 {
+  /* Başlığı ortalar */
+  text-align: center;
+
+  /* Üstten 54px boşluk bırakır */
+  padding-top: 54px;
+
+  /* Başlık rengini koyu mavi (#355592) yapar */
+  color: #355592;
+
+  /* Başlık boyutunu 30px yapar */
+  font-size: 30px;
+}
+
+.contactUsOrangeBox {
+  /* Küçük turuncu kutunun arka plan rengini ayarlar */
+  background-color: #fe9b01;
+
+  /* Köşeleri 10px yuvarlatır */
+  border-radius: 10px;
+
+  /* Kutuyu yatayda ortalar */
+  margin: auto;
+
+  /* Genişliği 70px, yüksekliği 7px olarak belirler */
+  width: 70px;
+  height: 7px;
+}
+
+.contactUs-content p {
+  /* Paragraflar etrafına 35px boşluk ekler */
+  margin: 35px;
+
+  /* Paragraf metnini ortalar */
+  text-align: center;
+}
+
+.contactUs-info {
+  /* İletişim bilgilerini esnek kutu modeliyle hizalar */
+  display: flex;
+
+  /* Elemanlar arasına %5 boşluk ekler */
+  gap: 5%;
+
+  /* Alt boşluk 124px olarak ayarlanır */
+  padding-bottom: 124px;
+}
+
+.contactUs-text {
+  /* İletişim metinlerinin bulunduğu bölümün genişliğini %50 olarak ayarlar */
+  width: 50%;
+}
+
+.contactUs-maps {
+  /* Harita bölümünün genişliğini %50 olarak ayarlar */
+  width: 50%;
+}
+
+.contact-type {
+  /* İletişim türlerini yatayda hizalar (örneğin, telefon ve e-posta) */
+  display: flex;
+
+  /* Elemanlar arasında %10 boşluk bırakır */
+  gap: 10%;
+}
+
+.contact-type p {
+  /* Paragrafları dikeyde ve yatayda ortalar */
+  margin: auto;
+}
+
+.contactUs-info input {
+  /* Giriş alanlarını blok düzeyinde hizalar */
+  display: block;
+
+  /* Giriş alanının üstüne %7 boşluk ekler */
+  margin-top: 7%;
+
+  /* Giriş alanının genişliğini %100 yapar */
+  width: 100%;
+
+  /* Giriş alanının yüksekliğini 1.7 rem olarak ayarlar */
+  height: 1.7rem;
+
+  /* Giriş alanının kenarlığını kaldırır */
+  border: none;
+
+  /* Arka plan rengini açık mavi (#f1f8ff) yapar */
+  background-color: #f1f8ff;
+
+  /* Köşeleri 5px yuvarlatır */
+  border-radius: 5px;
+
+  /* Giriş alanının sol tarafına %5 iç boşluk ekler */
+  padding-left: 5%;
+
+  /* Üst ve alt iç boşlukları %2 olarak ayarlar */
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.contactUs-info textarea {
+  /* Metin alanının üstüne %5 boşluk ekler */
+  margin-top: 5%;
+
+  /* Metin alanının genişliğini %100 yapar */
+  width: 100%;
+
+  /* Metin alanının yüksekliğini %50 olarak ayarlar */
+  height: 50%;
+}
+
+textarea {
+  /* Metin alanının sol tarafına %5 iç boşluk ekler */
+  padding-left: 5%;
+
+  /* Üst ve alt iç boşlukları %2 olarak ayarlar */
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+  /* Kenar çizgisini kaldırır */
+  border: none;
+
+  /* Arka plan rengini açık mavi (#f1f8ff) yapar */
+  background-color: #f1f8ff;
+
+  /* Köşeleri 5px yuvarlatır */
+  border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+  /* Ekran genişliği 576px veya daha küçük olduğunda uygulanacak stil kuralları */
+
+  .review-content {
+    /* İnceleme bölümünün genişliğini %90 olarak ayarlar */
+    width: 90%;
+  }
+
+  .review-clients {
+    /* İnceleme bölümündeki müşterilerin blok olarak hizalanmasını sağlar */
+    display: block;
+  }
+
+  .client {
+    /* Müşteri kutusunun genişliğini %100 yapar */
+    width: 100%;
+
+    /* Üstten 54px boşluk bırakır */
+    margin-top: 54px;
+  }
+
+  .contactUs-content {
+    /* İletişim bölümünün genişliğini %90 olarak ayarlar */
+    width: 90%;
+  }
+
+  .contactUs-info {
+    /* İletişim bilgilerini blok halinde alt alta hizalar */
+    display: block;
+  }
+
+  .contactUs-text {
+    /* İletişim metinlerinin bulunduğu bölümün genişliğini %100 yapar */
+    width: 100%;
+  }
+
+  .contactUs-maps {
+    /* Harita bölümünün genişliğini %100 yapar */
+    width: 100%;
+  }
+}

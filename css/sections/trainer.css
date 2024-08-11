@@ -1,0 +1,376 @@
+/* Eğitmenler (Trainers) bölümünün stil kurallarının başladığı yer */
+
+#trainers {
+  /* Eğitmenler bölümünün arka plan rengini açık maviye ayarlar */
+  background-color: #f0f9ff;
+}
+
+.trainers-content {
+  /* Eğitmenler bölümünün genişliğini yüzde 60 olarak belirler */
+  width: 60%;
+
+  /* Eğitmenler bölümünü yatayda ortalar */
+  margin: auto;
+}
+
+.trainers-content h2 {
+  /* Başlığı ortalar */
+  text-align: center;
+
+  /* Başlık rengini koyu mavi olarak ayarlar */
+  color: #355592;
+
+  /* Başlık font büyüklüğünü 30px yapar */
+  font-size: 30px;
+
+  /* Üstten 54px boşluk bırakır */
+  padding-top: 54px;
+}
+
+.trainerOrangeBox {
+  /* Küçük turuncu kutunun arka plan rengini ayarlar */
+  background-color: #fe9b01;
+
+  /* Köşeleri yuvarlatır */
+  border-radius: 10px;
+
+  /* Kutuyu yatayda ortalar */
+  margin: auto;
+
+  /* Kutunun genişliğini 70px, yüksekliğini 7px olarak belirler */
+  width: 70px;
+  height: 7px;
+}
+
+.trainers-content p {
+  /* Paragraf metinlerini ortalar */
+  text-align: center;
+
+  /* Her yandan 55px boşluk bırakır */
+  margin: 55px;
+}
+
+.trainers-box {
+  /* Eğitmen kutuları arasındaki boşluğu yüzde 5 olarak ayarlar */
+  gap: 5%;
+
+  /* Flexbox düzeni kullanarak kutuları yan yana dizer */
+  display: flex;
+
+  /* Kutuları yatayda boşluk bırakacak şekilde dağıtır */
+  justify-content: space-between;
+
+  /* Alttan 32px boşluk bırakır */
+  padding-bottom: 32px;
+}
+
+.trainer-img {
+  /* Eğitmen görsellerinin yüzde 100 genişliğinde olmasını sağlar */
+  width: 100%;
+
+  /* Görselin etrafına turuncu renkli bir çerçeve ekler */
+  border: solid 1px #fe9b01;
+
+  /* Köşeleri hafifçe yuvarlatır */
+  border-radius: 5px;
+}
+
+.img-box {
+  /* Görsellerin bulunduğu kutunun göreceli pozisyonunu ayarlar */
+  position: relative;
+
+  /* Genişliği ve yüksekliği yüzde 100 yapar */
+  width: 100%;
+  height: 100%;
+
+  /* Z-index değerini 0 olarak ayarlar, bu da diğer elemanlara göre konumunu belirler */
+  z-index: 0;
+}
+
+.before {
+  /* Görselin üstünde yer alan kutunun pozisyonunu mutlak olarak belirler */
+  position: absolute;
+
+  /* İçerik olarak boş bir değer atar */
+  content: "";
+
+  /* Kutunun genişliğini yüzde 110, yüksekliğini yüzde 50 olarak belirler */
+  width: 110%;
+  height: 50%;
+
+  /* Kutunun sol tarafa 5%, üst tarafa ise yüzde 25 yerleştirilmesini sağlar */
+  left: -5%;
+  top: 25%;
+
+  /* Kutunun arka plan rengini koyu mavi yapar */
+  background-color: #355592;
+
+  /* Z-index değerini -1 yaparak, kutunun diğer elemanların arkasında kalmasını sağlar */
+  z-index: -1;
+}
+
+.after {
+  /* 'before' kutusunun benzeri olarak tanımlanmıştır, ancak farklı boyut ve konumlara sahiptir */
+  position: absolute;
+  content: "";
+
+  /* Genişliği yüzde 50, yüksekliği yüzde 104 olarak belirler */
+  width: 50%;
+  height: 104%;
+
+  /* Sol tarafa yüzde 25, üst tarafa ise yüzde -4 konumlandırır */
+  left: 25%;
+  top: -4%;
+
+  /* Arka plan rengini koyu mavi yapar */
+  background-color: #355592;
+
+  /* Z-index değerini -1 yaparak, diğer elemanların arkasında kalmasını sağlar */
+  z-index: -1;
+}
+
+.trainer-flag {
+  /* Bayrak şeklindeki elemanın şekillendirilmesi için çokgen bir clip-path kullanır */
+  clip-path: polygon(
+    0 65%,
+    15% 65%,
+    15% 55%,
+    85% 55%,
+    85% 65%,
+    100% 65%,
+    100% 90%,
+    85% 90%,
+    85% 100%,
+    15% 100%,
+    15% 90%,
+    0% 90%
+  );
+
+  /* Arka plan rengini koyu mavi yapar */
+  background-color: #355692;
+
+  /* Bayrak elemanını mutlak pozisyonla ortalar */
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+
+  /* Bayrağın yüksekliğini yüzde 50, genişliğini yüzde 80 olarak belirler */
+  height: 50%;
+  width: 80%;
+}
+
+.hidden {
+  /* Elemanın görünürlüğünü gizler */
+  visibility: hidden;
+}
+
+.img-box .trainer-name {
+  /* Eğitmen ismi için font büyüklüğünü 1.5vw olarak belirler */
+  font-size: 1.5vw;
+
+  /* Yazı rengini AliceBlue olarak ayarlar */
+  color: aliceblue;
+
+  /* Eğitmen ismini mutlak pozisyonla yerleştirir */
+  position: absolute;
+
+  /* Yazıyı kutunun ortasına yakın bir yere yerleştirir */
+  top: 55%;
+  left: 40%;
+
+  /* Yazıya 35px margin ekler */
+  margin: 35px;
+
+  /* Yazıyı yatay ve dikey olarak ortalar */
+  transform: translate(-50%, -50%);
+}
+
+.img-box:hover .before {
+  /* Hover durumunda before kutusunun yüksekliğini yüzde 60 yapar */
+  height: 60%;
+
+  /* Geçiş süresini 0.5 saniye olarak ayarlar */
+  transition: 0.5s;
+}
+
+/* Purchase Section */
+/* Satın alma (Purchase) bölümünün stil kurallarını içeren bölüm */
+
+.purchase-content {
+  /* Satın alma bölümünün genişliğini yüzde 60 olarak belirler */
+  width: 60%;
+
+  /* Bölümü yatayda ortalar */
+  margin: auto;
+}
+
+.purchase-content h2 {
+  /* Başlığı ortalar */
+  text-align: center;
+
+  /* Üstten 50px boşluk bırakır */
+  padding-top: 50px;
+
+  /* Başlık rengini koyu mavi yapar */
+  color: #355592;
+
+  /* Font büyüklüğünü 30px olarak ayarlar */
+  font-size: 30px;
+}
+
+.purchase-content p {
+  /* Paragraf metinlerini ortalar */
+  text-align: center;
+
+  /* Her yandan 35px boşluk bırakır */
+  margin: 35px;
+}
+
+.purchaseOrangeBox {
+  /* Küçük turuncu kutunun arka plan rengini ayarlar */
+  background-color: #fe9b01;
+
+  /* Köşeleri yuvarlatır */
+  border-radius: 10px;
+
+  /* Kutuyu yatayda ortalar */
+  margin: auto;
+
+  /* Genişliği 70px, yüksekliği 7px olarak belirler */
+  width: 70px;
+  height: 7px;
+}
+
+.purchase-box {
+  /* Flexbox düzeni kullanarak kutuları yan yana ve aşağıya dizilmesine olanak tanır */
+  display: flex;
+
+  /* Elemanların alanlarına sığması için flex-wrap özelliğini kullanır */
+  flex-wrap: wrap;
+
+  /* Kutuları yatayda boşluk bırakacak şekilde dağıtır */
+  justify-content: space-between;
+
+  /* Alttan 54px boşluk bırakır */
+  padding-bottom: 54px;
+}
+
+.purchase-cards {
+  /* Kartların pozisyonunu relative olarak ayarlar */
+  position: relative;
+
+  /* Kart genişliğini yüzde 24 olarak belirler */
+  width: 24%;
+
+  /* Kartın etrafına gölge ekleyerek derinlik hissi kazandırır */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  /* Geçiş efekti tanımlar, genişliğin 0.5 saniyede değişmesini sağlar */
+  transition: width 0.5s;
+
+  /* Kartın köşelerini yuvarlatır */
+  border-radius: 10px;
+
+  /* Kartın üzerine gelindiğinde tıklanabilir olduğunu belirtmek için cursor'u pointer yapar */
+  cursor: pointer;
+}
+
+.purchase-cards:hover {
+  /* Hover durumunda kart genişliğini yüzde 25 yapar */
+  width: 25%;
+}
+
+.purchaseImg {
+  /* Görselin genişliğini yüzde 100 yapar */
+  width: 100%;
+
+  /* Görselin üst köşelerini yuvarlatır */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.purchase-cards h3 {
+  /* Başlığı ortalar */
+  text-align: center;
+
+  /* Font büyüklüğünü 500 olarak ayarlar (Bu yanlış bir değerdir, burada font-weight olması gerekiyor) */
+  font-size: 500;
+}
+
+.purchase-cards p {
+  /* Paragraf metnini ortalar */
+  text-align: center;
+
+  /* Font büyüklüğünü 500 olarak ayarlar (Bu da yanlış, font-weight olmalı) */
+  font-size: 500;
+}
+
+.purchase-cards h5 {
+  /* Alttan 10px boşluk bırakır */
+  margin-bottom: 10px;
+
+  /* Metni ortalar */
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  /* Küçük ekranlar için medya sorguları */
+
+  .trainers-content {
+    /* Eğitmenler bölümünün genişliğini yüzde 70 yapar */
+    width: 70%;
+  }
+
+  .trainers-box {
+    /* Eğitmen kutularının blok halinde alt alta dizilmesini sağlar */
+    display: block;
+  }
+
+  .trainer-img {
+    /* Küçük ekranlarda görsellerin üst tarafında 20px boşluk bırakır */
+    margin-top: 20px;
+  }
+
+  .img-box {
+    /* Küçük ekranlarda görsel kutularının üst tarafında yüzde 10 boşluk bırakır */
+    margin-top: 10%;
+  }
+
+  .after {
+    /* Küçük ekranlarda 'after' kutusunun üstten sıfır pozisyonuna yerleştirilmesini sağlar */
+    top: 0%;
+  }
+
+  .img-box .trainer-name {
+    /* Küçük ekranlarda eğitmen isimlerinin font boyutunu 5vw olarak ayarlar */
+    font-size: 5vw;
+  }
+
+  .purchase-container {
+    /* Küçük ekranlarda satın alma bölümünün genişliğini yüzde 80 yapar */
+    width: 80%;
+  }
+
+  .purchase-box {
+    /* Küçük ekranlarda kutuları blok halinde alt alta dizilmesini sağlar */
+    display: block;
+    width: 100%;
+  }
+
+  .purchase-cards {
+    /* Küçük ekranlarda kartların genişliğini yüzde 90 yapar */
+    width: 90%;
+
+    /* Kartları ortalar */
+    margin: auto;
+
+    /* Üstten 20px boşluk bırakır */
+    margin-top: 20px;
+  }
+
+  .purchase-cards:hover {
+    /* Küçük ekranlarda hover durumunda kart genişliğini yüzde 100 yapar */
+    width: 100%;
+  }
+}

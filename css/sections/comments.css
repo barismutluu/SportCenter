@@ -1,0 +1,162 @@
+#review {
+  /* İnceleme bölümünün arka plan rengini açık mavi (#f0f9ff) yapar */
+  background-color: #f0f9ff;
+}
+
+.review-content {
+  /* İnceleme bölümünün genişliğini %60 olarak ayarlar */
+  width: 60%;
+
+  /* Konteyneri yatayda ortalar */
+  margin: auto;
+}
+
+.review-content h2 {
+  /* Başlığı ortalar */
+  text-align: center;
+
+  /* Üstten 50px boşluk bırakır */
+  padding-top: 50px;
+
+  /* Başlık rengini koyu mavi (#355592) yapar */
+  color: #355592;
+
+  /* Başlık boyutunu 30px yapar */
+  font-size: 30px;
+}
+
+.reviewOrangeBox {
+  /* Küçük turuncu kutunun arka plan rengini ayarlar */
+  background-color: #fe9b01;
+
+  /* Köşeleri 10px yuvarlatır */
+  border-radius: 10px;
+
+  /* Kutuyu yatayda ortalar */
+  margin: auto;
+
+  /* Genişliği 70px, yüksekliği 7px olarak ayarlar */
+  width: 70px;
+  height: 7px;
+
+  /* Alt boşluk 15px olarak ayarlanır */
+  margin-bottom: 15px;
+}
+
+.p {
+  /* Paragraf metnini ortalar */
+  text-align: center;
+
+  /* Alt boşluk 35px olarak ayarlanır */
+  margin-bottom: 35px;
+}
+
+.review-clients {
+  /* Müşteri yorumlarını esnek kutu modeliyle hizalar */
+  display: flex;
+
+  /* Elemanlar arasına %15 boşluk ekler */
+  gap: 15%;
+
+  /* Alt boşluk 96px olarak ayarlanır */
+  padding-bottom: 96px;
+}
+
+.client-info {
+  /* Müşteri bilgilerini esnek kutu modeliyle hizalar */
+  display: flex;
+
+  /* Elemanlar arasına %6 boşluk ekler */
+  gap: 6%;
+}
+
+.client-info img {
+  /* Görsellerin köşelerini tamamen yuvarlatır (daire şeklinde) */
+  border-radius: 50%;
+
+  /* Görsellerin genişliğini 3 rem olarak ayarlar */
+  width: 3rem;
+}
+
+.comments {
+  /* Yorum kutusunun üst boşluğunu %3 olarak ayarlar */
+  margin-top: 3%;
+
+  /* Yorum kutusunun pozisyonunu relative olarak ayarlar */
+  position: relative;
+
+  /* Yorum kutusunun arka plan rengini koyu mavi (#355592) yapar */
+  background-color: #355592;
+
+  /* Metin rengini beyaz yapar */
+  color: white;
+
+  /* Yorum kutusunun genişliğini %100 olarak ayarlar */
+  width: 100%;
+}
+
+.comments p {
+  /* Paragraf boyutunu 12px yapar */
+  font-size: 12px;
+
+  /* İçerik çevresine 4px üst-alt, 4px sağ-sol boşluk ekler */
+  padding: 4px 4px;
+}
+
+.client-info p :first-child {
+  /* İlk paragrafları kalın (font-weight: 500) yapar */
+  font-weight: 500;
+}
+
+.client-info p:last-child {
+  /* Son paragrafları 12px boyutunda yapar */
+  font-size: 12px;
+}
+
+.comments::after {
+  /* Yorum kutusunun alt kısmına sağ köşede bir üçgen şekil ekler */
+  position: absolute;
+
+  /* İçerik olarak boş bir değer atar */
+  content: "";
+
+  /* Üçgen şekli belirlemek için clip-path kullanır */
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+
+  /* Üçgen şeklinin arka plan rengini #8096be olarak ayarlar */
+  background-color: #8096be;
+
+  /* Üçgen şeklinin genişliğini ve yüksekliğini 2rem yapar */
+  width: 2rem;
+  height: 2rem;
+
+  /* Üçgeni yorum kutusunun altına yerleştirir */
+  top: 100%;
+
+  /* Üçgeni sol tarafa hizalar */
+  left: 0;
+}
+
+.comments::before {
+  /* Yorum kutusunun alt kısmına sol köşede bir üçgen şekil ekler */
+  position: absolute;
+
+  /* İçerik olarak boş bir değer atar */
+  content: "";
+
+  /* Üçgen şekli belirlemek için clip-path kullanır */
+  clip-path: polygon(100% 0, 0 0, 0 100%);
+
+  /* Üçgen şeklinin arka plan rengini #8096be olarak ayarlar */
+  background-color: #8096be;
+
+  /* Üçgen şeklinin genişliğini ve yüksekliğini 2rem yapar */
+  width: 2rem;
+  height: 2rem;
+
+  /* Üçgeni yorum kutusunun altına yerleştirir */
+  top: 100%;
+
+  /* Üçgeni sağ tarafa hizalar */
+  right: 0%;
+}

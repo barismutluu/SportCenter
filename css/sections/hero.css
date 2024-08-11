@@ -1,0 +1,212 @@
+#hero {
+  /* Arka plan resmi olarak hero-man.jpg dosyasını ayarlar */
+  background-image: url(/images/hero-man.jpg);
+
+  /* Arka plan resmini konteynerin tamamını kaplayacak şekilde ayarlar */
+  background-size: cover;
+}
+
+.container-text {
+  /* Konteyneri yatayda ortalar */
+  margin: auto;
+
+  /* Konteynerin genişliğini ebeveyn elemanın %60'ı olarak ayarlar */
+  width: 60%;
+
+  /* Üstten 144px boşluk bırakır */
+  padding-top: 144px;
+}
+
+.container-text h3 {
+  /* Başlık boyutunu 15px yapar */
+  font-size: 15px;
+
+  /* Esnek kutu modeli ve inline-block olarak iki kez display özelliği verilmiş. Sadece biri kullanılmalı, inline-block burada yeterlidir */
+  display: inline-block;
+
+  /* Arka plan rengini koyu mavi (#355592) yapar */
+  background-color: #355592;
+
+  /* İçeriği dikeyde ortalar */
+  align-items: center;
+
+  /* Metni yatayda ortalar */
+  text-align: center;
+
+  /* Köşeleri 3px yuvarlaklaştırır */
+  border-radius: 3px;
+
+  /* İçerik çevresine 5px üst-alt, 10px sağ-sol boşluk ekler */
+  padding: 5px 10px;
+
+  /* Metin rengini beyaz yapar */
+  color: white;
+}
+
+.container-text h1 {
+  /* Başlık rengini beyaz yapar */
+  color: white;
+
+  /* Başlık boyutunu 70px yapar */
+  font-size: 70px;
+
+  /* Başlığa 3px siyah gölge ekler */
+  text-shadow: 3px 3px 3px black;
+
+  /* Alt boşluk 5px olarak ayarlanır */
+  margin-bottom: 5px;
+}
+
+.container-text p {
+  /* Paragraf boyutunu 22px yapar */
+  font-size: 22px;
+
+  /* İçerik çevresine 5px üst-alt, 10px sağ-sol boşluk ekler */
+  padding: 5px 10px 5px 10px;
+
+  /* Paragrafa 3px siyah gölge ekler */
+  text-shadow: 3px 3px 3px black;
+
+  /* Arka plan rengini %80 opaklıkla siyah yapar */
+  background-color: rgba(0, 0, 0, 0.8);
+
+  /* Alt boşluk 5px olarak ayarlanır */
+  margin-bottom: 5px;
+
+  /* Metin rengini beyaz yapar */
+  color: white;
+}
+
+#signUp-btn {
+  /* Butonun üst-alt 7px, sağ-sol 20px iç boşluğa sahip olmasını sağlar */
+  padding: 7px 20px;
+
+  /* Butonun kenar çizgisini kaldırır */
+  border: none;
+
+  /* Butonun metin rengini beyaz yapar */
+  color: white;
+
+  /* Butonun metin boyutunu 18px yapar */
+  font-size: 18px;
+
+  /* Butonun metnini kalın yapar */
+  font-weight: bold;
+
+  /* Butonun köşelerini 5px yuvarlaklaştırır */
+  border-radius: 5px;
+
+  /* Butonun arka plan rengini koyu mavi (#355592) yapar */
+  background-color: #355592;
+
+  /* Alt boşluk 54px, sağ boşluk 32px olarak ayarlanır */
+  margin-bottom: 54px;
+  margin-right: 32px;
+}
+
+#signUp-btn:hover {
+  /* Hover durumunda butonun arka plan rengini daha açık bir mavi (#426dbb) yapar */
+  background-color: #426dbb;
+}
+
+#details-btn {
+  /* Arka plan rengini %80 opaklıkla siyah yapar */
+  background-color: rgba(0, 0, 0, 0.8);
+
+  /* Butonun üst-alt 7px, sağ-sol 20px iç boşluğa sahip olmasını sağlar */
+  padding: 7px 20px;
+
+  /* Butonun metin rengini beyaz yapar */
+  color: white;
+
+  /* Metin boyutunu 18px yapar */
+  font-size: 18px;
+
+  /* Metni kalın yapar */
+  font-weight: bold;
+
+  /* Köşeleri 5px yuvarlaklaştırır */
+  border-radius: 5px;
+
+  /* Butonu tıklanabilir hale getirir (imleç değişimi) */
+  cursor: pointer;
+
+  /* Beyaz bir kenar çizgisi ekler */
+  border: 1px solid white;
+}
+
+#details-btn:hover {
+  /* Hover durumunda arka plan rengini koyu siyah yapar */
+  background-color: rgb(14, 12, 12);
+}
+
+/* CARD Section Start */
+/* Kart (Card) bölümünün stil kurallarını içerir */
+
+#card {
+  /* Arka plan rengini açık mavi (#f1f8ff) yapar */
+  background-color: #f1f8ff;
+}
+
+.container-cards {
+  /* Konteynerin genişliğini %60 yapar */
+  width: 60%;
+
+  /* Konteyneri yatayda ortalar */
+  margin: auto;
+
+  /* İçeriği yatayda ortalar */
+  justify-content: center;
+
+  /* İçeriği dikeyde ortalar */
+  align-items: center;
+
+  /* İçeriği yatayda boşluk bırakacak şekilde hizalar (ortalamadan sonra tekrar kullanılması gereksiz) */
+  justify-content: space-around;
+
+  /* Flexbox düzeni kullanarak içerikleri hizalar */
+  display: flex;
+
+  /* İçerik taşarsa yeni satıra geçmesini sağlar */
+  flex-wrap: wrap;
+
+  /* Elemanlar arasına 15px boşluk ekler */
+  gap: 15px;
+}
+
+.card-item {
+  /* Üst boşluk 8px, alt boşluk 16px olarak ayarlanır */
+  padding-top: 8px;
+  padding-bottom: 16px;
+
+  /* Kartın üst ve altından 15px boşluk bırakır */
+  margin: 15px 0px;
+
+  /* Kart içeriğini dikeyde sıralar */
+  display: flex;
+
+  /* Flex kutu yönünü dikey yapar */
+  flex-direction: column;
+
+  /* Metni ortalar */
+  text-align: center;
+
+  /* Arka plan rengini beyaz yapar */
+  background-color: white;
+
+  /* Kartın genişliğini 13rem olarak ayarlar */
+  width: 13rem;
+
+  /* İçerik elemanları arasına 10px boşluk ekler */
+  gap: 10px;
+}
+
+.card-item h3 {
+  /* Başlık rengini koyu mavi (#355592) yapar */
+  color: #355592;
+}
+
+.card-item p {
+  /* Paragraf metnini kalın yapar */
+  font-weight: bold;
+}

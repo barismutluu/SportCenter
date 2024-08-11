@@ -1,0 +1,328 @@
+#classes {
+  /* Sınıflar bölümünün konumunu relative olarak ayarlar */
+  position: relative;
+}
+
+.background {
+  /* Arka plan elemanının konumunu absolute olarak ayarlar */
+  position: absolute;
+
+  /* Arka planı sağa hizalar */
+  right: 0;
+
+  /* Arka planın genişliğini %60 yapar */
+  width: 60%;
+
+  /* Arka planın yüksekliğini %100 yapar */
+  height: 100%;
+
+  /* Arka plan rengini açık gri yapar */
+  background-color: #f6f6f6;
+
+  /* Z-index değerini -1 yaparak arka planda kalmasını sağlar */
+  z-index: -1;
+
+  /* Arka planın şekillendirilmesi için clip-path kullanır */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%, 12.5% 50%);
+}
+
+.container-classes {
+  /* Konteyneri yatayda ortalar */
+  margin: auto;
+
+  /* Konteynerin genişliğini %60 olarak ayarlar */
+  width: 60%;
+}
+
+.container-classes h2 {
+  /* Başlığı ortalar */
+  text-align: center;
+
+  /* Başlık rengini koyu mavi (#355592) yapar */
+  color: #355592;
+
+  /* Başlık boyutunu 30px yapar */
+  font-size: 30px;
+
+  /* Üstten 50px boşluk bırakır */
+  padding-top: 50px;
+
+  /* Alt boşluk 15px olarak ayarlanır */
+  margin-bottom: 15px;
+}
+
+#classesOrangeBox {
+  /* Küçük turuncu kutunun arka plan rengini ayarlar */
+  background-color: #fe9b01;
+
+  /* Köşeleri 10px yuvarlatır */
+  border-radius: 10px;
+
+  /* Kutuyu yatayda ortalar */
+  margin: auto;
+
+  /* Genişliği 70px, yüksekliği 7px olarak ayarlar */
+  width: 70px;
+  height: 7px;
+
+  /* Alt boşluk 30px olarak ayarlanır */
+  margin-bottom: 30px;
+}
+
+.container-classes p {
+  /* Paragraf metnini ortalar */
+  text-align: center;
+
+  /* Alt boşluk 52px olarak ayarlanır */
+  margin-bottom: 52px;
+}
+
+.buttons {
+  /* Üstten boşluğu otomatik olarak ayarlar */
+  margin-top: auto;
+
+  /* Butonları esnek kutu modeliyle hizalar */
+  display: flex;
+
+  /* İçeriği taşarsa yeni satıra geçmesini sağlar */
+  flex-wrap: wrap;
+
+  /* Butonlar arasında 20px boşluk bırakır */
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.group-btn {
+  /* Buton metninin rengini beyaz yapar */
+  color: white;
+
+  /* Butonun arka plan rengini koyu mavi (#355592) yapar */
+  background-color: #355592;
+
+  /* Buton kenarlığını kaldırır */
+  border: none;
+
+  /* Butonun üst-alt 8px, sağ-sol 20px iç boşluğa sahip olmasını sağlar */
+  padding: 8px 20px;
+
+  /* Buton metnini kalın yapar */
+  font-weight: bold;
+
+  /* Buton köşelerini 5px yuvarlatır */
+  border-radius: 5px;
+
+  /* Butonun metin boyutunu 18px yapar */
+  font-size: 18px;
+
+  /* Butonun konumunu relative olarak ayarlar */
+  position: relative;
+
+  /* Butonu tıklanabilir hale getirir */
+  cursor: pointer;
+
+  /* Butonun geçiş efektini 0.5 saniye yapar */
+  transition: 0.5s;
+}
+
+.selected {
+  /* Seçim göstergesinin konumunu absolute olarak ayarlar */
+  position: absolute;
+
+  /* Göstergenin üstten %100 boşlukta olmasını sağlar */
+  top: 100%;
+
+  /* Göstergenin soldan %40 uzaklıkta olmasını sağlar */
+  left: 40%;
+
+  /* Üçgen şeklindeki seçimi oluşturur */
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fe9b01;
+
+  /* Geçiş efektini 0.5 saniye yapar */
+  transition: 0.5s;
+}
+
+.classBottom {
+  /* Alt sınıf içeriğini esnek kutu modeliyle hizalar */
+  display: flex;
+
+  /* İçeriği dikeyde ortalar */
+  align-items: center;
+
+  /* Üstten 54px boşluk bırakır */
+  margin-top: 54px;
+
+  /* İçeriği yatayda ortalar */
+  justify-content: center;
+
+  /* Elemanlar arasında %10 boşluk bırakır */
+  gap: 10%;
+}
+
+.class-img {
+  /* Sınıf görselinin genişliğini %50 olarak ayarlar */
+  width: 50%;
+}
+
+.class-texts h3 {
+  /* Alt başlık boyutunu 24px yapar */
+  font-size: 24px;
+}
+
+.class-texts p {
+  /* Paragraf boyutunu 16px yapar */
+  font-size: 16px;
+
+  /* Üst-alt 24px, sağ-sol 0px boşluk bırakır */
+  margin: 24px 0px;
+
+  /* Satır yüksekliğini 24px olarak ayarlar */
+  line-height: 24px;
+}
+
+.bmi {
+  /* Konteynerin genişliğini %70 olarak ayarlar */
+  width: 70%;
+
+  /* Konteyneri yatayda ortalar */
+  margin: auto;
+
+  /* İçeriği esnek kutu modeliyle hizalar */
+  display: flex;
+
+  /* Elemanlar arasında %15 boşluk bırakır */
+  gap: 15%;
+
+  /* Üstten 54px boşluk bırakır */
+  padding-top: 54px;
+
+  /* Alttan 54px boşluk bırakır */
+  padding-bottom: 54px;
+
+  /* İçeriği yatayda ortalar */
+  justify-content: center;
+
+  /* İçeriği dikeyde ortalar */
+  align-items: center;
+}
+
+.bmi-content {
+  /* İçerik alanının genişliğini %50 olarak ayarlar */
+  width: 50%;
+}
+
+.bmi-content h2 {
+  /* Başlık rengini koyu mavi (#355592) yapar */
+  color: #355592;
+
+  /* Başlık boyutunu 35px yapar */
+  font-size: 35px;
+
+  /* Alt boşluk 15px olarak ayarlanır */
+  margin-bottom: 15px;
+}
+
+.bmi-content p {
+  /* Paragrafın üst boşluğunu 24px olarak ayarlar */
+  margin-top: 24px;
+}
+
+.bmiCalc {
+  /* Hesaplama bölümünün üst boşluğunu 24px olarak ayarlar */
+  margin-top: 24px;
+}
+
+.bmi-result {
+  /* Sonuç kutusunun konumunu relative olarak ayarlar */
+  position: relative;
+}
+
+.bmi-result h3 {
+  /* Başlığı ortalar */
+  text-align: center;
+
+  /* Alt boşluk 10px olarak ayarlanır */
+  margin-bottom: 10px;
+}
+
+.bmi-img {
+  /* BMI görselinin genişliğini %100 olarak ayarlar */
+  width: 100%;
+}
+
+.bmiSelection {
+  /* Seçim göstergesinin konumunu absolute olarak ayarlar */
+  position: absolute;
+
+  /* Seçim göstergesini sağa %12 yerleştirir */
+  right: 12%;
+
+  /* Göstergenin genişliği ve yüksekliği sıfır olarak ayarlanır */
+  width: 0;
+  height: 0;
+
+  /* Üçgen şeklindeki seçim göstergesini oluşturur */
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 20px solid #fe9b01;
+
+  /* Geçiş efektini 0.5 saniye yapar */
+  transition: 0.5s;
+}
+
+@media (max-width: 576px) {
+  /* Ekran genişliği 576px veya daha küçük olduğunda uygulanacak stil kuralları */
+
+  .container-classes {
+    /* Konteynerin genişliğini %90 olarak ayarlar */
+    width: 90%;
+  }
+
+  .classBottom {
+    /* Alt sınıf içeriğini blok hizalama olarak değiştirir */
+    display: block;
+  }
+
+  .class-img {
+    /* Sınıf görselinin genişliğini %100 yapar */
+    width: 100%;
+  }
+
+  .buttons {
+    /* Butonları grid düzende hizalar */
+    display: grid;
+
+    /* Grid sütunlarını 1fr 1fr olarak ayarlar */
+    grid-template-columns: 1fr 1fr;
+
+    /* Elemanlar arasında 20px boşluk bırakır */
+    gap: 20px;
+
+    /* Grid öğelerini yatayda ortalar */
+    justify-items: center;
+  }
+
+  .bmi {
+    /* BMI bölümünün genişliğini %70 olarak ayarlar */
+    width: 70%;
+
+    /* Konteyneri yatayda ortalar */
+    margin: auto;
+
+    /* İçeriği dikeyde hizalar */
+    display: flex;
+
+    /* Flex yönünü kolona (dikey) çevirir */
+    flex-direction: column;
+
+    /* Üstten 54px, alttan 54px boşluk bırakır */
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .bmi-content {
+    /* İçerik alanının genişliğini otomatik olarak ayarlar */
+    width: auto;
+  }
+}

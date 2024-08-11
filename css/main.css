@@ -1,0 +1,26 @@
+/* Sayfanın genel stil kurallarını içeren dosyanın import edilmesi */
+@import "./common.css";
+
+/* Header (başlık) bölümünün stil kurallarını içeren dosyanın import edilmesi */
+@import "./layouts/header.css";
+
+/* Footer (alt bilgi) bölümünün stil kurallarını içeren dosyanın import edilmesi */
+@import "./layouts/footer.css";
+
+/* Hero (ana görsel) bölümünün stil kurallarını içeren dosyanın import edilmesi */
+@import "./sections/hero.css";
+
+/* İstatistik (statistics) bölümünün stil kurallarını içeren dosyanın import edilmesi */
+@import "./sections/statistic.css";
+
+/* Sınıflar (classes) bölümünün stil kurallarını içeren dosyanın import edilmesi */
+@import "./sections/classes.css";
+
+/* Eğitmenler (trainer) bölümünün stil kurallarını içeren dosyanın import edilmesi */
+@import "./sections/trainer.css";
+
+/* İletişim (contact) bölümünün stil kurallarını içeren dosyanın import edilmesi */
+@import "./sections/contact.css";
+
+/* Yorumlar (comments) bölümünün stil kurallarını içeren dosyanın import edilmesi */
+@import "./sections/comments.css";

@@ -1,0 +1,265 @@
+.header-container {
+  /* Konteynerin genişliğini %100 olarak ayarlar */
+  width: 100%;
+
+  /* Konteynerin yüksekliğini 72px olarak ayarlar */
+  height: 72px;
+
+  /* Arka plan rengini koyu mavi (#355592) yapar */
+  background-color: #355592;
+
+  /* Konteyneri sticky (sayfa kaydırıldığında sabit kalacak) hale getirir */
+  position: sticky;
+
+  /* Konteynerin sayfanın üstünde sabitlenmesini sağlar */
+  top: 0;
+
+  /* Z-index değerini 5 yaparak diğer içeriklerin üstünde kalmasını sağlar */
+  z-index: 5;
+}
+
+.navbar {
+  /* Navbar genişliğini %60 olarak ayarlar */
+  width: 60%;
+
+  /* Navbar'ı mutlak konumlandırır */
+  position: absolute;
+
+  /* Navbar'ı soldan %20 uzaklıkta yerleştirir */
+  left: 20%;
+
+  /* Navbar öğelerini esnek kutu modeliyle hizalar */
+  display: flex;
+
+  /* Öğeleri dikeyde ortalar */
+  align-items: center;
+
+  /* Öğeleri yatayda boşluk bırakacak şekilde hizalar */
+  justify-content: space-between;
+
+  /* Öğeler arasında 20px boşluk bırakır */
+  gap: 20px;
+}
+
+.nav-item {
+  /* Navbar öğelerinin sol tarafına 20px boşluk ekler */
+  margin-left: 20px;
+
+  /* Metnin altındaki çizgiyi kaldırır */
+  text-decoration: none;
+
+  /* Metin rengini beyaz yapar */
+  color: white;
+
+  /* Metni kalın yapar */
+  font-weight: bold;
+}
+
+.nav-btn {
+  /* Butonun üst-alt 4px, sağ-sol 8px iç boşluğa sahip olmasını sağlar */
+  padding: 4px 8px;
+
+  /* Buton köşelerini 4px yuvarlatır */
+  border-radius: 4px;
+
+  /* Buton kenarlığını kaldırır */
+  border: none;
+
+  /* Metni ortalar */
+  text-align: center;
+
+  /* Arka plan rengini turuncu (#fe9b01) yapar */
+  background-color: #fe9b01;
+}
+
+.nav-btn:hover {
+  /* Hover durumunda butonun arka plan rengini daha koyu bir turuncu (#f19604) yapar */
+  background-color: #f19604;
+}
+
+.menu-toggle {
+  /* Menü geçişini gizler (varsayılan olarak görünmez) */
+  display: none;
+}
+
+@media (max-width: 576px) {
+  /* Ekran genişliği 576px veya daha küçük olduğunda uygulanacak stil kuralları */
+
+  .navbar {
+    /* Navbar'ı sola hizalar */
+    left: 0%;
+
+    /* Öğeler arasında %35 boşluk bırakır */
+    gap: 35%;
+  }
+
+  #signUp-btn {
+    /* Kayıt ol butonunu blok olarak hizalar */
+    display: block;
+
+    /* Butonun genişliğini %100 yapar */
+    width: 100%;
+
+    /* Alt boşluk 5px olarak ayarlanır */
+    margin-bottom: 5px;
+  }
+
+  #details-btn {
+    /* Detaylar butonunu blok olarak hizalar */
+    display: block;
+
+    /* Butonun genişliğini %100 yapar */
+    width: 100%;
+  }
+
+  .bmi {
+    /* BMI bölümünü blok hizalama olarak değiştirir */
+    display: block;
+  }
+
+  .bmi-content {
+    /* BMI içeriğinin genişliğini %100 yapar */
+    width: 100%;
+  }
+
+  .bmi-result {
+    /* BMI sonuç bölümünün üst kısmına 54px boşluk ekler */
+    margin-top: 54px;
+  }
+
+  .bmi-img {
+    /* BMI görselinin genişliğini %100 yapar */
+    width: 100%;
+  }
+}
+
+@media (max-width: 1350px) {
+  /* Ekran genişliği 1350px veya daha küçük olduğunda uygulanacak stil kuralları */
+
+  .menu-btn {
+    /* Menü butonunun imlecini pointer yapar (tıklanabilir hale getirir) */
+    cursor: pointer;
+
+    /* Menü butonunu görünür yapar */
+    display: block;
+  }
+
+  .menu-icon {
+    /* Menü ikonu görünür yapar */
+    display: block;
+
+    /* Menü ikonunun genişliğini 30px, yüksekliğini 3px yapar */
+    width: 30px;
+    height: 3px;
+
+    /* Menü ikonunun arka plan rengini açık gri (#ece7e7) yapar */
+    background-color: #ece7e7;
+
+    /* Menü ikonunun altına 6px boşluk ekler */
+    margin-bottom: 6px;
+  }
+
+  .menu-icon:before,
+  .menu-icon:after {
+    /* Menü ikonunun üstü ve altı için içeriği ayarlar */
+    content: "";
+
+    /* Menü ikonunun üstü ve altını görünür yapar */
+    display: block;
+
+    /* Genişliği 30px, yüksekliği 3px yapar */
+    width: 30px;
+    height: 3px;
+
+    /* Menü ikonunun üst ve alt arka plan rengini beyaz (#fff2f2) yapar */
+    background-color: #fff2f2;
+  }
+
+  .menu-icon:before {
+    /* Üst menü ikonunu 9px yukarı taşır */
+    transform: translateY(-9px);
+  }
+
+  .menu-icon:after {
+    /* Alt menü ikonunu 6px aşağı taşır */
+    transform: translateY(6px);
+  }
+
+  .nav {
+    /* Navbar'ı mutlak konumlandırır */
+    position: absolute;
+
+    /* Navbar'ı 300% yukarı taşır (gizli) */
+    transform: translateY(-300%);
+  }
+
+  .menu-toggle:checked + .menu-btn .menu-icon {
+    /* Menü ikonunu şeffaf yapar (görünmez) */
+    background-color: transparent;
+  }
+
+  .menu-toggle:checked + .menu-btn .menu-icon:before {
+    /* Menü ikonunun üstünü çapraz (x işareti) olarak döndürür */
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  .menu-toggle:checked + .menu-btn .menu-icon:after {
+    /* Menü ikonunun altını çapraz (x işareti) olarak döndürür */
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+
+  .menu-toggle:checked + .menu-btn + .nav {
+    /* Menü açıldığında navbar'ı görünür hale getirir */
+    display: block;
+
+    /* Navbar'ı %75 aşağı taşır */
+    top: 75%;
+
+    /* Navbar'ı %95 sola hizalar */
+    left: 95%;
+
+    /* Navbar genişliğini %30 olarak ayarlar */
+    width: 30%;
+
+    /* Navbar'ı yukarıdan taşımayı sıfırlar */
+    transform: translateY(0%);
+
+    /* Navbar'ın arka plan rengini siyahın %59 opaklığı ile yapar */
+    background-color: rgba(0, 0, 0, 0.591);
+
+    /* Navbar'ın üst kenarına 0.1rem şeffaf bir çizgi ekler */
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+
+    /* Navbar'a hafif bir gölge efekti ekler */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+
+    /* Navbar'ı aşağıya açıldığında yumuşak bir geçiş efekti ile açılmasını sağlar */
+    transition: 0.5s linear;
+
+    /* Navbar'ın alt köşelerini yuvarlatır */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .nav-item {
+    /* Navbar öğelerini blok hizalama olarak değiştirir */
+    display: block;
+
+    /* Metin boyutunu 1rem yapar */
+    font-size: 1rem;
+
+    /* Üst-alt 1rem boşluk, sağ-sol 0 boşluk ekler */
+    margin: 1rem 0;
+
+    /* İçerik sağ-sol 1rem boşluk ekler */
+    padding: 0 1rem;
+  }
+
+  .nav-btn {
+    /* Butonun altına 12px boşluk ekler */
+    margin-bottom: 12px;
+
+    /* Butonun sağ-sol iç boşluğunu 1rem yapar */
+    padding: 0 1rem;
+  }
+}

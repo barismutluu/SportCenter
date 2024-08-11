@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <!-- Meta etiketleri ve sayfa başlığı -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport Center</title>
+
+    <!-- Ana stil dosyasının bağlanması -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Google Fonts için ön bağlantılar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Poppins yazı tipinin yüklenmesi -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Başlık bölümü (header) -->
+    <header id="header" class="header-container">
+      <div class="navbar">
+        <!-- Logo görüntüsü -->
+        <div class="logo">
+          <img src="images/logo.png" alt="Sport Center logo" />
+        </div>
+
+        <!-- Menü geçişi için checkbox ve buton -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label class="menu-btn" for="menu-toggle">
+          <span class="menu-icon"></span>
+        </label>
+
+        <!-- Navigasyon menüsü -->
+        <nav class="nav">
+          <a href="#" class="nav-item">Home</a>
+          <a href="#classes" class="nav-item">Classes</a>
+          <a href="#trainers" class="nav-item">Trainer</a>
+          <a href="#review" class="nav-item">Review</a>
+          <a href="#contactUs" class="nav-item">Contact</a>
+          <button class="nav-item nav-btn">JOIN US</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO BÖLÜMÜ BAŞLANGIÇ -->
+    <section id="hero">
+      <div class="container-text">
+        <!-- Güçlü grup çalışması başlığı -->
+        <h3>POWERFULL</h3>
+        <h1>
+          Group <br />
+          Practice <br />
+          With Trainer
+        </h1>
+
+        <!-- Tanıtım metni -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          dolorum, aspernatur magni reprehenderit accusamus, ea totam in veniam,
+          quidem minima hic quo. Porro eligendi officia culpa sunt? Nemo ipsa
+          aut doloribus minima magnam reiciendis, fugit cupiditate. Porro ad
+          officia, consectetur ratione a labore consequuntur.
+        </p>
+
+        <!-- Kayıt ol ve detaylar butonları -->
+        <button id="signUp-btn">Sign Up</button>
+        <button id="details-btn">Details</button>
+      </div>
+    </section>
+    <!-- HERO BÖLÜMÜ SONU -->
+
+    <!-- KART BÖLÜMÜ BAŞLANGIÇ -->
+    <section id="card">
+      <div class="container-cards">
+        <!-- Kurs, egzersiz, çalışma saati ve mutlu müşteri istatistikleri -->
+        <div class="card-item">
+          <h3>325</h3>
+          <p>Courses</p>
+        </div>
+        <div class="card-item">
+          <h3>405</h3>
+          <p>Work Out</p>
+        </div>
+        <div class="card-item">
+          <h3>305</h3>
+          <p>Working Hour</p>
+        </div>
+        <div class="card-item">
+          <h3>705</h3>
+          <p>Happy Client</p>
+        </div>
+      </div>
+    </section>
+    <!-- KART BÖLÜMÜ SONU -->
+
+    <!-- SINIFLAR BÖLÜMÜ BAŞLANGIÇ -->
+    <section id="classes">
+      <div class="background"></div>
+      <div class="container-classes">
+        <!-- Sınıflar hakkında genel bilgi ve butonlar -->
+        <h2>OUR CLASSES</h2>
+        <div id="classesOrangeBox"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          suscipit aliquam iste quasi sunt distinctio?
+        </p>
+        <div class="buttons">
+          <!-- Yoga, grup, solo ve esneme seçenekleri -->
+          <button class="group-btn">
+            <div class="selected"></div>
+            Yoga
+          </button>
+          <button class="group-btn">
+            <div></div>
+            Group
+          </button>
+          <button class="group-btn">
+            <div></div>
+            Solo
+          </button>
+          <button class="group-btn">
+            <div></div>
+            Stretching
+          </button>
+        </div>
+        <div class="classBottom">
+          <div class="class-texts">
+            <!-- Yoga hakkında bilgi ve zaman çizelgesi -->
+            <h3>Why are your Yoga?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptates consequuntur qui exercitationem corrupti, sed impedit
+              quia dicta nam esse quae odit omnis officiis tempora magni!.
+            </p>
+            <h3>When comes Yoga Your Time.</h3>
+            <p>Saturday-Sunday: 8:00am - 10.00am</p>
+            <p>Monday-Tuesday: 10:00am - 12.00pm</p>
+            <p>Wednesday-Friday: 3:00pm - 6.00pm</p>
+          </div>
+          <!-- Yoga resim -->
+          <img class="class-img" src="images/yoga.jpg" alt="yoga" />
+        </div>
+      </div>
+    </section>
+    <!-- SINIFLAR BÖLÜMÜ SONU -->
+
+    <!-- VÜCUT KİTLE ENDEKSİ (BMI) BÖLÜMÜ BAŞLANGIÇ -->
+    <section class="bmi">
+      <div class="bmi-content">
+        <h2>BMI Calculator</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem,
+          accusantium voluptatum delectus veniam hic deleniti consectetur.
+          Cupiditate, distinctio esse quis numquam officia necessitatibus
+          suscipit, eligendi eveniet veritatis ratione pariatur accusamus.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+          corporis dolorum eius impedit veniam adipisci veritatis aperiam
+          architecto, enim dolor doloremque eos ullam illo minus, inventore
+          aliquam, ad suscipit quidem!
+        </p>
+
+        <!-- BMI hesaplama için kullanıcıdan boy ve kilo bilgisi alınması -->
+        <div class="bmiCalc">
+          <input id="heigth" type="text" placeholder="Your Height" />
+          <label for="height">cm</label>
+          <input id="weigth" type="text" placeholder="Your Weight" />
+          <label for="height">kg</label>
+        </div>
+      </div>
+      <div class="bmi-result">
+        <h3>Your BMI</h3>
+        <!-- BMI görseli -->
+        <img class="bmi-img" src="images/bmi-index.jpg" alt="bmi" />
+        <div class="bmiSelection"></div>
+      </div>
+    </section>
+    <!-- BMI BÖLÜMÜ SONU -->
+
+    <!-- EĞİTMENLER BÖLÜMÜ BAŞLANGIÇ -->
+    <section id="trainers">
+      <div class="trainers-content">
+        <h2>OUR BEST TRAINERS</h2>
+        <div class="trainerOrangeBox"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+          suscipit voluptatem magnam quo, laudantium accusamus sed consequatur
+          at consectetur facere exercitationem!
+        </p>
+
+        <!-- Eğitmenler için görseller ve bilgiler -->
+        <div class="trainers-box">
+          <div class="img-box">
+            <div class="before"></div>
+            <img
+              src="images/trainer1.jpg"
+              alt="Trainer 1"
+              class="trainer-img"
+            />
+            <div class="after"></div>
+            <div class="trainer-flag hidden"></div>
+            <p class="trainer-name hidden">Jane Doe</p>
+          </div>
+          <div class="img-box">
+            <div class="before"></div>
+            <img
+              src="images/trainer2.jpg"
+              alt="Trainer 2"
+              class="trainer-img"
+            />
+            <div class="after"></div>
+            <div class="trainer-flag hidden"></div>
+            <p class="trainer-name hidden">Adam Smith</p>
+          </div>
+          <div class="img-box">
+            <div class="before"></div>
+            <img
+              src="images/trainer3.jpg"
+              alt="Trainer 3"
+              class="trainer-img"
+            />
+            <div class="after"></div>
+            <div class="trainer-flag hidden"></div>
+            <p class="trainer-name hidden">Jessica Sue</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EĞİTMENLER BÖLÜMÜ SONU -->
+
+    <!-- SATIN ALMA BÖLÜMÜ BAŞLANGIÇ -->
+    <section id="purchase">
+      <div class="purchase-content">
+        <h2>PURCHASE FROM US</h2>
+        <div class="purchaseOrangeBox"></div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+          debitis, dignissimos officia ipsam odit libero eaque corrupti, quod
+          pariatur delectus totam ea consectetur dolorum perferendis cumque
+          similique dolorem veniam maiores!
+        </p>
+
+        <!-- Ürünler ve satın alma butonları -->
+        <div class="purchase-box">
+          <div class="purchase-cards">
+            <img
+              src="images/purchase1.jpg"
+              class="purchaseImg"
+              alt="purchase1"
+            />
+            <h3>Kettlebell / 5kg</h3>
+            <p><s>89,99$ </s>/ 59,99$</p>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h5>Add To Cart</h5>
+            <div></div>
+          </div>
+          <div class="purchase-cards">
+            <img
+              src="images/purchase2.jpg"
+              class="purchaseImg"
+              alt="purchase2"
+            />
+            <h3>Treadmill</h3>
+            <p><s>89,99$</s>/ 59,99$</p>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h5>Add To Cart</h5>
+            <div></div>
+          </div>
+          <div class="purchase-cards">
+            <img
+              src="images/purchase3.jpg"
+              class="purchaseImg"
+              alt="purchase3"
+            />
+            <h3>Adjustable Dumbbell</h3>
+            <p><s>89,99$</s> / 59,99$</p>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h5>Add To Cart</h5>
+            <div></div>
+          </div>
+          <div class="purchase-cards">
+            <img
+              src="images/purchase4.jpg"
+              class="purchaseImg"
+              alt="purchase4"
+            />
+            <h3>Kettlebell / 3kg</h3>
+            <p><s>89,99$</s> / 59,99$</p>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h5>Add To Cart</h5>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SATIN ALMA BÖLÜMÜ SONU -->
+
+    <!-- YORUM BÖLÜMÜ BAŞLANGIÇ -->
+    <section id="review">
+      <div class="review-content">
+        <h2>REVIEW CLIENT</h2>
+        <div class="reviewOrangeBox"></div>
+        <p class="p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci,
+          cupiditate.
+        </p>
+
+        <!-- Müşteri yorumları -->
+        <div class="review-clients">
+          <div class="client">
+            <div class="client-info">
+              <img src="images/client1.jpg" alt="Client 1" />
+              <div class="name">
+                <p>Diet Expert</p>
+                <p>CFO</p>
+              </div>
+            </div>
+            <div class="comments">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis harum vero odio minus, neque laudantium saepe
+                voluptates mollitia. Magnam facilis asperiores laudantium
+                officiis deleniti, animi incidunt maxime quae qui illo?
+              </p>
+            </div>
+          </div>
+          <div class="client">
+            <div class="client-info">
+              <img src="images/client2.jpg" alt="Client 2" />
+              <div class="name">
+                <p>Cardio Trainer</p>
+                <p>CEO</p>
+              </div>
+            </div>
+            <div class="comments">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis harum vero odio minus, neque laudantium saepe
+                voluptates mollitia. Magnam facilis asperiores laudantium
+                officiis deleniti, animi incidunt maxime quae qui illo?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- YORUM BÖLÜMÜ SONU -->
+
+    <!-- İLETİŞİM BÖLÜMÜ BAŞLANGIÇ -->
+    <section id="contactUs">
+      <div class="contactUs-content">
+        <h2>CONTACT US</h2>
+        <div class="contactUsOrangeBox"></div>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          consectetur numquam,
+        </p>
+        <div class="contactUs-info">
+          <div class="contactUs-text">
+            <div class="contact-type">
+              <!-- İletişim numarası ve e-posta adresi -->
+              <div class="contactUs-mobile">
+                <h4>Mobile Number</h4>
+                <p>+135 773 321 44 42</p>
+              </div>
+              <div class="email-address">
+                <h4>Email Address</h4>
+                <p>demo@demo.com</p>
+              </div>
+            </div>
+            <h3>Make An Appointment</h3>
+            <!-- Randevu formu -->
+            <input type="text" id="name" placeholder="Your Name" />
+            <input type="text" id="email" placeholder="Your Email" />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <div class="contactUs-maps">
+            <!-- Google Haritalar iframe -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192697.88850554352!2d28.847373148811315!3d41.00546324292603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1723376915438!5m2!1str!2str"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- İLETİŞİM BÖLÜMÜ SONU -->
+
+    <!-- ALT BÖLÜM BAŞLANGIÇ -->
+    <section id="footer">
+      <div class="footer-content">
+        <!-- Alt bölümde logo ve bilgi -->
+        <img src="images/logo.png" alt="logo" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolorem
+          aperiam officia, ipsum natus delectus ducimus temporibus, dicta earum
+          fugit quis a libero nesciunt assumenda porro labore vel amet harum?
+        </p>
+        <div class="info-help">
+          <!-- Bilgi ve faydalı bağlantılar -->
+          <div class="information">
+            <h3>Information</h3>
+            <p>About Us</p>
+            <p>Classes</p>
+            <p>Blog</p>
+            <p>Contact</p>
+          </div>
+          <div class="helpfulLinks">
+            <h3>Helpful links</h3>
+            <p>Services</p>
+            <p>Supports</p>
+            <p>Terms & Condition</p>
+            <p>Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ALT BÖLÜM SONU -->
+
+    <!-- Ana JavaScript dosyasının eklenmesi -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
